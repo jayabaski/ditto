@@ -42,33 +42,28 @@
         "datemodified": {
           "title": "Date Modified",
           "type": "string",
-          "description": "The timestamp when the data was updated",
-          "readOnly": false
+          "description": "The timestamp when the data was updated"
         },
         "currentSummationDelivered": {
           "title": "Current Summation Delivered",
           "type": "number",
-          "description": "The Current Summation Gas delivered.",
-          "readOnly": false
+          "description": "The Current Summation Gas delivered."
         },
         "currentDayAlternativeConsumptionDelivered": {
           "title": "current Day Alternative Consumption Delivered",
           "type": "number",
-          "description": "The Current Summation Gas delivered.",
-          "readOnly": false
+          "description": "The Current Summation Gas delivered."
         },
         "currentDayCostConsumptionDelivered": {
           "title": "Current Day Cost Consumption Delivered",
           "type": "number",
-          "description": "The Current Day Cost Consumption Delivered.",
-          "readOnly": false
+          "description": "The Current Day Cost Consumption Delivered."
         },
         "reportingTimestamp": {
           "title": "Reporting Timestamp",
           "type": "string",
           "format": "date-time",
-          "description": "The Reporting Timestamp.",
-          "readOnly": false
+          "description": "The Reporting Timestamp."
         }      
     },
     "actions": {  }

@@ -34,7 +34,10 @@
       "currentSummationDelivered": {
         "title": "Current Summation Delivered",
         "type": "number",
-        "description": "The Current Summation Gas delivered."
+        "description": "The Current Summation Gas delivered.",
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "multipleOf": 0.001
       },
       "currentDayAlternativeConsumptionDelivered": {
         "title": "current Day Alternative Consumption Delivered",

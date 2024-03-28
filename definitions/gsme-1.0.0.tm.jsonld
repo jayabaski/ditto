@@ -38,10 +38,6 @@
         "readOnly": false
       }
     },
-    "consumption":{
-      "title": "Gas Consumption",
-      "type": "object",
-      "properties":{
         "datemodified": {
           "title": "Date Modified",
           "type": "string",
@@ -67,8 +63,6 @@
           "type": "string",
           "format": "date-time",
           "description": "The Reporting Timestamp."
-        }
-      }
     },
     "actions": {  }
   }

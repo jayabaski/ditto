@@ -37,16 +37,7 @@
         "description": "Specifies the URL to information about the provider of this information",
         "readOnly": false
       }
-    },
-    "properties":{
-      "datemodified": {
-        "properties":{
-          "title": "Date Modified",
-          "type": "string",
-          "description": "The timestamp when the data was updated"
-        }
-      }
-    },        
+    },      
     "actions": {  }
   }
   

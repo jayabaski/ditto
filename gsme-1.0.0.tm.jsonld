@@ -1,0 +1,70 @@
+{
+    "@context": [
+      "https://www.w3.org/2022/wot/td/v1.1",
+      {
+        "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "time": "http://www.w3.org/2006/time#"
+      }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Gas Smart Meter (GSME)",
+    "description": "A Gas Smart Meter",
+    "version": {
+      "model": "1.0.0"
+    },
+    "links": [],
+    "tm:optional": [],
+    "properties": {
+      "source": {
+        "title": "Source",
+        "type": "string",
+        "description": "A sequence of characters giving the source of the entity data",
+        "readOnly": true
+      },
+      "dataprovider": {
+        "title": "Data Provider",
+        "type": "string",
+        "description": "Specifies the URL to information about the provider of this information",
+        "readOnly": true
+      },
+      "datemodified": {
+        "title": "Date Modified",
+        "type": "unsignedInt",
+        "description": "The timestamp when the data was updated",
+        "readOnly": true
+      },
+      "currentSummationDelivered": {
+        "title": "Current Summation Delivered",
+        "type": "double",
+        "description": "The Current Summation Gas delivered."
+      },
+      "currentDayAlternativeConsumptionDelivered": {
+        "title": "current Day Alternative Consumption Delivered",
+        "type": "double",
+        "description": "The Current Summation Gas delivered."
+      },
+      "currentDayCostConsumptionDelivered": {
+        "title": "Current Day Cost Consumption Delivered",
+        "type": "double",
+        "description": "The Current Day Cost Consumption Delivered."
+      }
+      ,
+      "reportingTimestamp": {
+        "title": "Reporting Timestamp",
+        "type": "double",
+        "description": "The Reporting Timestamp."
+      },
+      "manufacturer": {
+        "title": "Manufacturer",
+        "type": "string",
+        "readOnly": true
+      },
+      "serialNo": {
+        "title": "Serial number",
+        "type": "string",
+        "readOnly": true
+      }
+    },
+    "actions": {  }
+  }
+  

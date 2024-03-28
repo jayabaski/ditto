@@ -14,7 +14,7 @@
     },
     "links": [],
     "tm:optional": [],
-    "attributes": {
+    "properties": {
       "manufacturer": {
         "title": "Manufacturer",
         "type": "string",

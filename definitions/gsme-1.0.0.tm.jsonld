@@ -15,43 +15,6 @@
     "links": [],
     "tm:optional": [],
     "properties": {
-      "consumption": {
-        "title": "Consumption",
-        "description": "The Consumption data.",
-        "type": "object",
-        "properties": {      
-            "datemodified": {
-            "title": "Date Modified",
-            "type": "string",
-            "description": "The timestamp when the data was updated",
-            },
-            "currentSummationDelivered": {
-            "title": "Current Summation Delivered",
-            "type": "number",
-            "description": "The Current Summation Gas delivered.",
-            "minimum": 0.0,
-            "maximum": 1.0,
-            "multipleOf": 0.001
-            },
-      "currentDayAlternativeConsumptionDelivered": {
-        "title": "current Day Alternative Consumption Delivered",
-        "type": "number",
-        "description": "The Current Summation Gas delivered."
-      },
-      "currentDayCostConsumptionDelivered": {
-        "title": "Current Day Cost Consumption Delivered",
-        "type": "number",
-        "description": "The Current Day Cost Consumption Delivered."
-      }
-      ,
-      "reportingTimestamp": {
-        "title": "Reporting Timestamp",
-        "type": "string",
-        "format": "date-time",
-        "description": "The Reporting Timestamp."
-      }}
-    },
-    "attributes": {
       "manufacturer": {
         "title": "Manufacturer",
         "type": "string",
@@ -72,6 +35,34 @@
         "title": "Data Provider",
         "type": "string",
         "description": "Specifies the URL to information about the provider of this information",
+      },
+        "properties": {      
+            "datemodified": {
+            "title": "Date Modified",
+            "type": "string",
+            "description": "The timestamp when the data was updated",
+            },
+            "currentSummationDelivered": {
+            "title": "Current Summation Delivered",
+            "type": "number",
+            "description": "The Current Summation Gas delivered.",
+            },
+      "currentDayAlternativeConsumptionDelivered": {
+        "title": "current Day Alternative Consumption Delivered",
+        "type": "number",
+        "description": "The Current Summation Gas delivered."
+      },
+      "currentDayCostConsumptionDelivered": {
+        "title": "Current Day Cost Consumption Delivered",
+        "type": "number",
+        "description": "The Current Day Cost Consumption Delivered."
+      }
+      ,
+      "reportingTimestamp": {
+        "title": "Reporting Timestamp",
+        "type": "string",
+        "format": "date-time",
+        "description": "The Reporting Timestamp."
       }
     },
     "actions": {  }

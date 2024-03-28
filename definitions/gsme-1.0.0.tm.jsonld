@@ -38,7 +38,7 @@
         "readOnly": false
       }
     },
-    "features":{
+    "properties":{
       "datemodified": {
         "properties":{
           "title": "Date Modified",

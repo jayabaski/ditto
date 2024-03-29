@@ -12,7 +12,7 @@
         "type": "string",
         "readOnly": true
       },
-      "serialNo1": {
+      "serialNo": {
         "title": "Serial number",
         "type": "string",
         "readOnly": true
@@ -31,7 +31,8 @@
       },
       "datemodified": {
         "title": "Date Modified",
-        "type": "number",
+        "type": "string",
+        "format": "date-time",
         "description": "The timestamp when the data was updated",
         "readOnly": false
       },

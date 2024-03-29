@@ -12,7 +12,7 @@
         "type": "string",
         "readOnly": true
       },
-      "serialNo": {
+      "serialNo1": {
         "title": "Serial number",
         "type": "string",
         "readOnly": true

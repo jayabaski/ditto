@@ -31,7 +31,7 @@
       },
       "datemodified": {
         "title": "Date Modified",
-        "type": "string",
+        "type": "number",
         "description": "The timestamp when the data was updated",
         "readOnly": false
       },

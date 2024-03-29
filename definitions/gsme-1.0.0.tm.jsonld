@@ -10,55 +10,64 @@
 	"properties": {"manufacturer": {
         "title": "Manufacturer",
         "type": "string",
-        "readOnly": true
+        "readOnly": true,
+        "default": "Toshiba"
       },
       "serialNo": {
         "title": "Serial number",
         "type": "string",
-        "readOnly": true
+        "readOnly": true,
+        "default": "ABCD-1234-5678"
       },
       "source": {
         "title": "Source",
         "type": "string",
         "description": "A sequence of characters giving the source of the entity data",
-        "readOnly": true
+        "readOnly": true,
+        "default": "HOME-1"
       },
       "dataprovider": {
         "title": "Data Provider",
         "type": "string",
         "description": "Specifies the URL to information about the provider of this information",
-        "readOnly": false
+        "readOnly": false,
+        "default": "NA"
       },
       "datemodified": {
         "title": "Date Modified",
         "type": "string",
         "format": "date-time",
         "description": "The timestamp when the data was updated",
-        "readOnly": false
+        "readOnly": false,
+        "default": "29-03-2024T00:00:00.123Z"
       },
       "currentSummationDelivered": {
         "title": "Current Summation Delivered",
         "type": "number",
         "description": "The Current Summation Gas delivered.",
-        "readOnly": false
+        "readOnly": false,
+        "default": 0.00
       },
       "currentDayAlternativeConsumptionDelivered": {
         "title": "current Day Alternative Consumption Delivered",
         "type": "number",
         "description": "The Current Summation Gas delivered.",
-        "readOnly": false
+        "readOnly": false,
+        "default": 0.00
       },
       "currentDayCostConsumptionDelivered": {
         "title": "Current Day Cost Consumption Delivered",
         "type": "number",
         "description": "The Current Day Cost Consumption Delivered.",
-        "readOnly": false
+        "readOnly": false,
+        "default": 0.00
       },
       "reportingTimestamp": {
         "title": "Reporting Timestamp",
         "type": "number",
         "description": "The Reporting Timestamp.",
-        "readOnly": false
+        "readOnly": false,
+        "default": 1711690211
   }
     },
 	"actions": {},

@@ -31,6 +31,7 @@
       },
       "consumption":{
         "title": "Consumption Information",
+        "id": "com.toshiba.dt:gsme:consumption-1.0.0",
         "@type": "tm:submodel",
         "properties":{
           "datemodified": {

@@ -37,12 +37,209 @@
       "readOnly": false,
       "default": 0.00
     },
-    "CurrentSummationDelivered": {
-      "title": "Current Summation Delivered",
+    "PreviousDayAlternativeConsumptionDelivered": {
+      "title": "Previous Day Alternative Consumption Delivered",
       "type": "number",
-      "description": "The Current Gas delivered.",
+      "description": "The Previous Day Alternative Consumption Delivered.",
       "readOnly": false,
       "default": 0.00
+    }, 
+    "PreviousDay2AlternativeConsumptionDelivered": {
+      "title": "Previous Day 2 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 2 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousDay3AlternativeConsumptionDelivered": {
+      "title": "Previous Day 3 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 3 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousDay4AlternativeConsumptionDelivered": {
+      "title": "Previous Day 4 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 4 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousDay5AlternativeConsumptionDelivered": {
+      "title": "Previous Day 5 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 5 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousDay6AlternativeConsumptionDelivered": {
+      "title": "Previous Day 6 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 6 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousDay7AlternativeConsumptionDelivered": {
+      "title": "Previous Day 7 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 7 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousDay8AlternativeConsumptionDelivered": {
+      "title": "Previous Day 8 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Day 8 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "CurrentWeekAlternativeConsumptionDelivered": {
+      "title": "Current Week Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Current Week Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "PreviousWeekAlternativeConsumptionDelivered": {
+      "title": "Previous Week Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Week Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "PreviousWeek2AlternativeConsumptionDelivered": {
+      "title": "Previous Week 2 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Week 2 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "PreviousWeek3AlternativeConsumptionDelivered": {
+      "title": "Previous Week 3 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Week 3 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "PreviousWeek4AlternativeConsumptionDelivered": {
+      "title": "Previous Week 4 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Week 4 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "PreviousWeek5AlternativeConsumptionDelivered": {
+      "title": "Previous Week 5 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Week 5 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "CurrentMonthAlternativeConsumptionDelivered": {
+      "title": "Current Month Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Current Month Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    }, 
+    "PreviousMonthAlternativeConsumptionDelivered": {
+      "title": "Previous Month Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousMonth2AlternativeConsumptionDelivered": {
+      "title": "Previous Month 2 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 2 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "PreviousMonth3AlternativeConsumptionDelivered": {
+      "title": "Previous Month 3 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 3 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth4AlternativeConsumptionDelivered": {
+      "title": "Previous Month 4 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 4 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth5AlternativeConsumptionDelivered": {
+      "title": "Previous Month 5 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 5 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth6AlternativeConsumptionDelivered": {
+      "title": "Previous Month 6 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 6 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth7AlternativeConsumptionDelivered": {
+      "title": "Previous Month 7 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 7 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth8AlternativeConsumptionDelivered": {
+      "title": "Previous Month 8 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 8 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth9AlternativeConsumptionDelivered": {
+      "title": "Previous Month 9 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 9 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth10AlternativeConsumptionDelivered": {
+      "title": "Previous Month 10 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 10 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth11AlternativeConsumptionDelivered": {
+      "title": "Previous Month 11 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 11 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth12AlternativeConsumptionDelivered": {
+      "title": "Previous Month 12 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 12 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },  
+    "PreviousMonth13AlternativeConsumptionDelivered": {
+      "title": "Previous Month 13 Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Previous Month 13 Alternative Consumption Delivered",
+      "readOnly": false,
+      "default": 0.00
+    },    
+    "CurrentDayCostConsumptionDelivered": {
+      "title": "Current Day Cost Consumption Delivered",
+      "type": "number",
+      "description": "Current Day Cost Consumption Delivered.",
+      "readOnly": false,
+      "default": 0.00,
+      "Unit": "GBP"
     },    
     "reportingTimestamp": {
       "title": "Reporting Timestamp",

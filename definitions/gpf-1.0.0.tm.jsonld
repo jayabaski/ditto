@@ -1,0 +1,57 @@
+{
+	"@context": "https://www.w3.org/2019/wot/td/v1",
+	"title": "GPF Model",
+	"@type": "tm:ThingModel",
+	"id": "com.toshiba.dt:gpf-1.0.0",
+	"description": "A Gas Proxy Function Modelr",
+  "version": {
+      "model": "1.0.0"
+    },
+	"properties": {
+    "source": {
+      "title": "Source",
+      "type": "string",
+      "description": "A sequence of characters giving the source of the entity data",
+      "readOnly": true,
+      "default": "HOME-1"
+    },
+    "dataprovider": {
+      "title": "Data Provider",
+      "type": "string",
+      "description": "Specifies the URL to information about the provider of this information",
+      "readOnly": false,
+      "default": "NA"
+    },
+    "datemodified": {
+      "title": "Date Modified",
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp when the data was updated",
+      "readOnly": false,
+      "default": "29-03-2024T00:00:00.123Z"
+    },
+    "CurrentDayAlternativeConsumptionDelivered": {
+      "title": "Current Day Alternative Consumption Delivered",
+      "type": "number",
+      "description": "Current Day Alternative Consumption Delivered.",
+      "readOnly": false,
+      "default": 0.00
+    },
+    "CurrentSummationDelivered": {
+      "title": "Current Summation Delivered",
+      "type": "number",
+      "description": "The Current Gas delivered.",
+      "readOnly": false,
+      "default": 0.00
+    },    
+    "reportingTimestamp": {
+      "title": "Reporting Timestamp",
+      "type": "number",
+      "description": "The Reporting Timestamp.",
+      "readOnly": false,
+      "default": 1711690211
+    }
+  },
+	"actions": {},
+	"events": {}
+}

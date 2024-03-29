@@ -32,7 +32,6 @@
       "consumption":{
         "title": "Consumption Information",
         "@type": "tm:submodel",
-        "type": "object",
         "properties":{
           "datemodified": {
             "title": "Date Modified",

@@ -31,8 +31,9 @@
       },
       "datemodified": {
         "title": "Date Modified",
-        "type": "dateTime",
-        "description": "The timestamp when the data was updated"
+        "type": "number",
+        "description": "The timestamp when the data was updated",
+        "readOnly": false
       }
     },
 	"actions": {},

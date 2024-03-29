@@ -1,5 +1,10 @@
 {
-	"@context": "https://www.w3.org/2019/wot/td/v1",
+	"@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
 	"title": "GPF Model",
 	"@type": "tm:ThingModel",
 	"id": "com.toshiba.dt:gpf-1.0.0",
@@ -35,7 +40,8 @@
       "type": "number",
       "description": "Current Day Alternative Consumption Delivered.",
       "readOnly": false,
-      "default": 0.00
+      "default": 0.00,
+      "unit": "om2:cubicMetre"
     },
     "PreviousDayAlternativeConsumptionDelivered": {
       "title": "Previous Day Alternative Consumption Delivered",

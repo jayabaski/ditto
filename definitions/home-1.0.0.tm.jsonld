@@ -2,8 +2,8 @@
 	"@context": "https://www.w3.org/2019/wot/td/v1",
 	"title": "CHF Model",
 	"@type": "tm:ThingModel",
-	"id": "com.toshiba.dt:commhub-1.0.0",
-	"description": "A Communication Hub Function Modelr",
+	"id": "com.toshiba.dt:home-1.0.0",
+	"description": "A Home Model",
   "version": {
       "model": "1.0.0"
     },
@@ -43,15 +43,15 @@
     "links": [
         {
           "rel": "tm:submodel",
-          "href": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/chf-1.0.0.tm.jsonld",
+          "href": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/gsme-1.0.0.tm.jsonld",
           "type": "application/tm+json",
-          "instanceName": "CHF"
+          "instanceName": "GSME"
         },
         {
             "rel": "tm:submodel",
-            "href": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/gpf-1.0.0.tm.jsonld",
+            "href": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/commhub-1.0.0.tm.jsonld",
             "type": "application/tm+json",
-            "instanceName": "GPF"
+            "instanceName": "COMMHUB"
         }
     ]
 }

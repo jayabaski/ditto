@@ -29,18 +29,11 @@
         "description": "Specifies the URL to information about the provider of this information",
         "readOnly": false
       },
-      "consumption":{
-        "title": "Consumption Information",
-        "id": "com.toshiba.dt:gsme:consumption-1.0.0",
-        "@type": "tm:submodel",
-        "properties":{
-          "datemodified": {
-            "title": "Date Modified",
-            "type": "string",
-            "description": "The timestamp when the data was updated"
-        }
+      "datemodified": {
+        "title": "Date Modified",
+        "type": "dateTime",
+        "description": "The timestamp when the data was updated"
       }
-    }
     },
 	"actions": {},
 	"events": {}

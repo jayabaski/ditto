@@ -36,6 +36,7 @@
       "default": "29-03-2024T00:00:00.123Z"
     },
     "CurrentDayAlternativeConsumptionDelivered": {
+      "@type": "om2:Volume",
       "title": "Current Day Alternative Consumption Delivered",
       "type": "number",
       "description": "Current Day Alternative Consumption Delivered.",

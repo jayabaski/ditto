@@ -1,21 +1,13 @@
 {
-    "@context": [
-      "https://www.w3.org/2022/wot/td/v1.1",
-      {
-        "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
-        "time": "http://www.w3.org/2006/time#"
-      }
-    ],
-    "@type": "tm:ThingModel",
-    "title": "Gas Smart Meter (GSME)",
-    "description": "A Gas Smart Meter",
+	"@context": "https://www.w3.org/2019/wot/td/v1",
+	"title": "Gas Smart Meter (GSME)",
+	"@type": "tm:ThingModel",
+	"id": "com.toshiba.dt:gsme-1.0.0",
+	"description": "A Gas Smart Meter",
     "version": {
       "model": "1.0.0"
     },
-    "links": [],
-    "tm:optional": [],
-    "properties": {
-      "manufacturer": {
+	"properties": {"manufacturer": {
         "title": "Manufacturer",
         "type": "string",
         "readOnly": true
@@ -36,8 +28,19 @@
         "type": "string",
         "description": "Specifies the URL to information about the provider of this information",
         "readOnly": false
+      },
+      "consumption":{
+        "title": "Consumption Information",
+        "type": "object",
+        "properties":{
+          "datemodified": {
+            "title": "Date Modified",
+            "type": "string",
+            "description": "The timestamp when the data was updated"
+        }
       }
-    },      
-    "actions": {  }
-  }
-  
+    }
+    },
+	"actions": {},
+	"events": {}
+}

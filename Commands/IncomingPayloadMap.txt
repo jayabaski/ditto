@@ -1,0 +1,33 @@
+function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) { 
+	const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload)); 
+	const jsonData = JSON.parse(jsonString); 
+	const thingId = jsonData.thingId.split(':'); 
+	
+	const value = { 
+					temp_sensor: { 
+						properties: { 
+							value: jsonData.temp 
+							} 
+						}, 
+					gaz_sensor: { 
+						properties: { 
+							value: jsonData.gaz 
+							} 
+						}, 
+					alert_led: { 
+						properties: { 
+						value: jsonData.alert 
+						} 
+					}, 
+				}; 
+				
+	return	Ditto.buildDittoProtocolMsg( 	thingId[0], // your namespace 
+											thingId[1], 
+											'things', // we deal with a thing 
+											'twin', // we want to update the twin 
+											'commands', // create a command to update the twin        
+											'modify', // modify the twin        
+											'/features', // modify all features at once headers, 
+											value 
+										);
+}

@@ -1,0 +1,66 @@
+{
+  "id": "b5848410-d86c-4f1e-a605-0a89304df8a4",
+  "name": "MosquittoMQ",
+  "connectionType": "mqtt",
+  "connectionStatus": "open",
+  "uri": "tcp://baskaran:tsip123@mosquitto:1883",
+  "sources": [
+    {
+      "addresses": [
+        "devices/+"
+      ],
+      "consumerCount": 1,
+      "qos": 1,
+      "authorizationContext": [
+        "connection:mosquitto-mqtt"
+      ],
+      "enforcement": {
+        "input": "{{ source:address }}",
+        "filters": [
+          "devices/{{ thing:id }}"
+        ]
+      },
+      "headerMapping": {},
+      "payloadMapping": [
+        "javascript"
+      ],
+      "replyTarget": {
+        "address": "{{header:reply-to}}",
+        "headerMapping": {},
+        "expectedResponseTypes": [
+          "response",
+          "error"
+        ],
+        "enabled": true
+      }
+    }
+  ],
+  "targets": [
+    {
+      "address": "devices/{{ thing:id }}/downlink",
+      "topics": [
+        "_/_/things/twin/events",
+        "_/_/things/live/messages"
+      ],
+      "qos": 1,
+      "authorizationContext": [
+        "connection:mosquitto-mqtt"
+      ],
+      "headerMapping": {}
+    }
+  ],
+  "clientCount": 1,
+  "failoverEnabled": true,
+  "validateCertificates": true,
+  "processorPoolSize": 1,
+  "tags": [],
+  "mappingDefinitions": {
+    "javascript": {
+      "mappingEngine": "JavaScript",
+      "options": {
+        "incomingScript": "function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) { const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload)); const jsonData = JSON.parse(jsonString); const thingId = jsonData.thingId.split(':'); const value = { temp_sensor: { properties: { value: jsonData.temp } }, gaz_sensor: { properties: { value: jsonData.gaz } }, alert_led: { properties: { value: jsonData.alert } }, }; return Ditto.buildDittoProtocolMsg( thingId[0],  thingId[1],'things','twin','commands','modify', '/features', headers, value ); }",
+        "outgoingScript": ""
+      }
+    }
+  }
+}

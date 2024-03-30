@@ -1,0 +1,19 @@
+Mosquitto MQTT
+Subscribe to a Topic
+=====================
+mosquitto_sub -h localhost -t "devices/+" -u "baskaran" -P "tsip123"
+
+Publish to a Topic
+===================
+mosquitto_pub -h localhost -t test -m "hello world" -u "baskaran" -P "tsip123"
+
+Public to Ditto Topic
+=======================
+mosquitto_pub -h localhost -t devices/sensor.test:mosquittolab -m '{"temp": 23, "gaz": 58, "alert": 0, "thingId": "sensor.test:mosquittolab"}' -u "baskaran" -P "tsip123"
+
+mosquitto_pub -t devices/sensor.test:mosquittolab -m '{"temp": 23, "gaz": 58, "alert": 0, "thingId": "sensor.test:mosquittolab"}' -q 1 -u "baskaran" -P "tsip123"
+
+
+MQTT publish command
+======================
+mqtt pub -t devices/sensor.test:hivelab -m '{"temp": 23, "gaz": 58, "alert": 0, "thingId": "sensor.test:hivelab"}' -q 1 -h localhost -p 1883

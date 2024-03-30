@@ -1,0 +1,52 @@
+curl -X PUT 'http://localhost:8080/api/2/policies/ditto.default:policy' -u 'baskaran:tsip123' -H 'Content-Type: application/json' -d '{
+	"entries": {
+    	"owner": {
+        	"subjects": {
+            	"nginx:baskaran": {
+                	"type": "nginx basic auth user"
+            	}
+        	},
+        	"resources": {
+            	"thing:/": {
+                	"grant": [
+                    	"READ","WRITE"
+                	],
+                	"revoke": []
+            	},
+            	"policy:/": {
+                	"grant": [
+                    	"READ","WRITE"
+                	],
+                	"revoke": []
+            	},
+            	"message:/": {
+                	"grant": [
+                    	"READ","WRITE"
+                	],
+                	"revoke": []
+            	}
+        	}
+    	},
+    	"connection": {
+        	"subjects": {
+            	"connection:mosquitto-mqtt": {
+                	"type": "Connection to HiveMQ MQTT broker"
+            	}
+        	},
+        	"resources": {
+            	"thing:/": {
+                	"grant": [
+                    	"READ","WRITE"
+                	],
+                	"revoke": []
+            	},
+            	"message:/": {
+                	"grant": [
+                    	"READ","WRITE"
+                	],
+                	"revoke": []
+            	}
+        	}
+    	}
+	}
+}'

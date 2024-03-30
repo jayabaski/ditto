@@ -1,0 +1,54 @@
+Create Thing "GSME"
+====================
+
+curl --location --request PUT -u baskaran:tsip123 'http://localhost:8080/api/2/things/com.toshiba.dt:gsme_001_001'  \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "policyId": "ditto.default:policy",
+    "definition": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/gsme-1.0.0.tm.jsonld"
+}'
+
+
+Create Thing "COMMHUB"
+======================
+
+curl --location --request PUT -u baskaran:tsip123 'http://localhost:8080/api/2/things/com.toshiba.dt:commhub_001_001'  \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "policyId": "ditto.default:policy",
+    "definition": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/commhub-1.0.0.tm.jsonld"
+}'
+
+Create Thing "Home"
+====================
+
+curl --location --request PUT -u baskaran:tsip123 'http://localhost:8080/api/2/things/com.toshiba.dt:home_001_001'  \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "policyId": "ditto.default:policy",
+    "definition": "https://raw.githubusercontent.com/jayabaski/ditto/main/definitions/home-1.0.0.tm.jsonld"
+}'
+
+
+Delete Thing "COMMHUB"
+======================
+
+curl --location --request DELETE -u baskaran:tsip123 'http://localhost:8080/api/2/things/com.toshiba.dt:commhub_001_001
+
+
+Delete Thing "GSME"
+===================
+
+curl --location --request DELETE -u baskaran:tsip123 'http://localhost:8080/api/2/things/com.toshiba.dt:gsme_001_001'
+
+
+Delete Policies
+================
+
+curl -X DELETE -u baskaran:tsip123 'http://localhost:8080/api/2/policies/com.toshiba.dt:gsme_001_001'
+
+
+List All things
+===============
+
+curl -u baskaran:tsip123ditto -X GET 'http://localhost:8080/api/2/search/things?filter=eq(attributes/source,"HOME-1")'

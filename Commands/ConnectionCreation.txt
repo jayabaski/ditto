@@ -1,0 +1,27 @@
+curl -X POST 'http://localhost:8080/api/2/connections' -u 'devops:foobar' -H 'Content-Type: application/json' -d '{
+        	"name": "MosquittoMQ",
+        	"connectionType": "mqtt",
+        	"connectionStatus": "open",
+        	"failoverEnabled": true,
+        	"uri": "tcp://baskaran:tsip123@mosquitto:1883",
+        	"sources": [{
+            	"addresses": ["devices/#"],
+            	"authorizationContext": ["connection:mosquitto-mqtt"],
+            	"qos": 1,
+            	"enforcement": {
+   	            "input": "{{ source:address }}",
+  	             "filters": [
+     	             "devices/{{ thing:id }}"
+    	           ]
+  	          }           
+         	}],
+        	"targets": [{
+            	"address": "devices/{{ thing:id }}/downlink",
+            	"topics": [
+            	"_/_/things/twin/events",
+            	"_/_/things/live/messages"
+            	],
+            	"authorizationContext": ["connection:mosquitto-mqtt"],
+            	"qos": 1
+        	}]
+    	}'

@@ -1,0 +1,30 @@
+function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {
+    const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload));
+    const jsonData = JSON.parse(jsonString); 
+    const thingId = jsonData.thingId.split(':'); 
+    
+   
+    const value = { 
+        source: jsonData.src,
+        dataprovider: jsonData.dataprov, 
+		datemodified: jsonData.date,
+        currentSummationDelivered: jsonData.summ,
+        currentDayAlternativeConsumptionDelivered: jsonData.consump,
+        currentDayCostConsumptionDelivered: jsonData.cost,
+        reportingTimestamp: jsonData.timeStamp
+        };    
+    return Ditto.buildDittoProtocolMsg(
+        thingId[0], // your namespace 
+        thingId[1], 
+        'things', // we deal with a thing
+        'twin', // we want to update the twin
+        'commands', // create a command to update the twin
+        'modify', // modify the twin
+        '/features', // modify all features at once
+        headers, 
+        value
+    );
+}
+
+
+function mapToDittoProtocolMsg(t,e,o,r){let i=String.fromCharCode.apply(null,new Uint8Array(o)),n=JSON.parse(i),a=n.thingId.split(":"),m={source:n.src,dataprovider:n.dataprov,datemodified:n.date,currentSummationDelivered:n.summ,currentDayAlternativeConsumptionDelivered:n.consump,currentDayCostConsumptionDelivered:n.cost,reportingTimestamp:n.timeStamp};return Ditto.buildDittoProtocolMsg(a[0],a[1],"things","twin","commands","modify","/features",t,m)}

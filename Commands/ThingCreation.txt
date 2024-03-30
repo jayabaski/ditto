@@ -1,0 +1,24 @@
+curl -X PUT 'http://localhost:8080/api/2/things/sensor.test:mosquittolab' -u 'baskaran:tsip123' -H 'Content-Type: application/json' -d '{
+    "policyId": "ditto.default:policy",
+    "attributes": {
+        "name": "HiveMQ Sensor Lab",
+        "type": "ESP32 Sensor board"
+    },
+    "features": {
+        "temp_sensor": {
+            "properties": {
+                "value": 0
+            }
+        },
+        "gaz_sensor": {
+            "properties": {
+                "value": 0
+            }
+        },
+        "alert_led": {
+            "properties": {
+                "value": 0
+            }
+        }
+    }
+}'

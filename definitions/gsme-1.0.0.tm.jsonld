@@ -23,7 +23,7 @@
         "title": "Source",
         "type": "string",
         "description": "A sequence of characters giving the source of the entity data",
-        "readOnly": true,
+        "readOnly": false,
         "default": "HOME-1"
       },
       "dataprovider": {

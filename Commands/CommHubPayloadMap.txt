@@ -20,7 +20,7 @@ function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {
         'twin', // we want to update the twin
         'commands', // create a command to update the twin
         'modify', // modify the twin
-        '/features', // modify all features at once
+        '/attributes', // modify all features at once
         headers, 
         value
     );

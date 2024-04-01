@@ -5,13 +5,14 @@
 const char* ssid = "KADHIR";
 const char* password = "hello@123";
 
-const char* mqtt_server = "192.168.1.51";
+const char* mqtt_server = "192.168.1.58";
 const char *mqtt_username = "baskaran";
 const char *mqtt_password = "tsip123";
 const int mqtt_port = 1883;
 
 
 const char* ntpServer = "pool.ntp.org";
+//const char* ntpServer = "192.168.0.100";
 const long  gmtOffset_sec = 0*60*60;  //UTC
 //const long  gmtOffset_sec = 5.5*60*60;  //India Standard Time
 const int   daylightOffset_sec = 0; //Day Light
@@ -36,7 +37,7 @@ void setup() {
 while (!client.connected()) {
     String client_id = "esp32-client-";
     client_id += String(WiFi.macAddress());
-    Serial.printf("The client %s connects to the public MQTT broker\n", client_id.c_str());
+    Serial.printf("The client %s connects to the public MQTT broker %s\n", client_id.c_str(),mqtt_server);
     if (client.connect(client_id.c_str(), mqtt_username, mqtt_password)) {
         Serial.println("Public EMQX MQTT broker connected");
     } else {
